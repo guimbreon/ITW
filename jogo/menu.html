@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Memory game</title>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/menu.css">
 </head>
 
 <body>
@@ -15,6 +17,10 @@
       </ul>
     </nav>
   </header>
+  <audio controls autoplay >
+    <source src="../sounds/Medieval Music Black Wolfs Inn.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
   
   <h2>Registro:</h2>
   <div>
@@ -47,13 +53,17 @@
     </select>
   </div>
 
-  <h2>Opções:</h2>
-  <div>
-    <a href = "../jogo/1p.html"><img src = "../images/1p.png" height="120px" width=auto></a>
-    <a href = "../jogo/2p.html"><img src = "../images/2p.png" height="120px" width=auto></a>
+  <div class="player-options">
+    <p><strong>Players:</strong></p>
+    <a href = "../jogo/1p.html"><img src = "../images/1p.png"></a>
+    <a href = "../jogo/2p.html"><img src = "../images/2p.png"></a>
   </div>
-
-  <div>
+  <div class="decks">
+    <a href="../extra/decks.html"><p><strong>Opções de cartas:</strong></p></a>
+    <img src = "../images/flashcards/Jungle-animal-Lizard-flashcard.jpeg">
+    <img src = "../images/HEALTH flashcards/health-flashcards-cut.jpeg">
+    <img src = "../images/halloween flashcards/coffin-flashcard.jpeg">
     
   </div>
+
 </body>

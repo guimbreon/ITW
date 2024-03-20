@@ -1,0 +1,45 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif; /*MUDAR*/
+  margin: 0;
+  padding: 0;
+}
+h2, p {
+  color: black
+}
+
+header { /*ver as cores melhor*/
+  background-color: #002147;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+  color: rgba(223, 211, 211, 0.76) /*selected element*/
+}
+
+nav ul li a {
+  color: #fff;/*unselected elements*/
+  text-decoration: none;
+}
+
+audio {
+  width: 50px; /* Defina a largura desejada */
+  height: auto; /* Deixe a altura ajustável para manter a proporção */
+}
+

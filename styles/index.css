@@ -1,66 +1,17 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif; /*MUDAR*/
-  margin: 0;
-  padding: 0;
-}
-h2, p {
-  color: #fff
+.play {
+  position: absolute; /* Define a posição absoluta para centralizar */
+  top: 50%; /* Coloca o topo do elemento no centro vertical */
+  left: 50%; /* Coloca a esquerda do elemento no centro horizontal */
+  transform: translate(-50%, -50%); /* Move o elemento de volta metade do seu tamanho */
 }
 
-/* Header Styles */
-header {
-  background-color: #002147;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-header ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-header li {
-  display: inline;
-  margin-right: 20px;
-}
-
-header a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
+.play img {
+  height: 200px;
+  width: auto;
 }
 
 
-
-/* Footer Styles */
-footer {
-  background-color: #002147;
-  color: #fff;
-  padding: 20px;
-  margin-top: auto;
+audio {
+  width: 50px; /* Defina a largura desejada */
+  height: auto; /* Deixe a altura ajustável para manter a proporção */
 }
-
-footer p {
-  margin: 0;
-  text-align: center;
-}
-

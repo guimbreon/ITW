@@ -1,0 +1,19 @@
+.player-options{
+  float: right;
+  margin: 10px;
+}
+.player-options img{
+  height:120px;
+  width:auto;
+}
+
+.decks{
+  margin-top: 200px;
+  margin-left: 200px;
+  
+}
+.decks img{
+  height:120px;
+  width:auto;
+}
+
