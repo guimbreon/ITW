@@ -1,8 +1,9 @@
-
 .decks img{
   height:120px;
   width:auto;
   margin: 5px;
 }
 
-
+.decks p, h1 {
+  font-weight: bold;
+}

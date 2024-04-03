@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
 }
-h2, p {
+h2 {
   color: black
 }
 
@@ -30,11 +30,11 @@ nav ul {
 nav ul li {
   display: inline;
   margin-right: 10px;
-  color: rgba(223, 211, 211, 0.76) /*selected element*/
+  color: rgba(223, 211, 211, 0.76) /*Elementos selecionados*/
 }
 
 nav ul li a {
-  color: #fff;/*unselected elements*/
+  color: #fff;/*Elementos nao selecionados*/
   text-decoration: none;
 }
 

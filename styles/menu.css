@@ -15,5 +15,18 @@
 .decks img{
   height:120px;
   width:auto;
+  margin: 5px;
 }
 
+p{
+  font-weight: bold;
+  
+}
+.decks a {
+  color: initial; /* Cor inicial do texto */
+  text-decoration: none; /* Remover o underline */
+}
+
+.decks a:hover {
+  color: red; /* MUDAR */
+}
