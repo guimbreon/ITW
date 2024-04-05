@@ -3,16 +3,30 @@ body {
   font-family: Arial, sans-serif; /*MUDAR*/
   margin: 0;
   padding: 0;
+  background-image: url(../images/fundo.jpg);
 }
 h2 {
   color: black
 }
 
-header { /*ver as cores melhor*/
+header {
   background-color: #002147;
   color: #fff;
-  padding: 20px 0;
   text-align: center;
+  padding: 18px;
+  position: fixed;
+  width: 100%;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: inline;
+  margin-right: 20px;
 }
 
 header a {
@@ -22,7 +36,6 @@ header a {
 }
 
 nav ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -41,5 +54,13 @@ nav ul li a {
 audio {
   width: 50px; /* Defina a largura desejada */
   height: auto; /* Deixe a altura ajustável para manter a proporção */
+  position: absolute;
+  left: 10px; /* Ajuste a distância da borda esquerda conforme necessário */
+  top: 7px; /* Ajuste a distância da borda superior conforme necessário */
 }
 
+.borda {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+}

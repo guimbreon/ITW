@@ -1,0 +1,13 @@
+ol li{
+  list-style-type: upper-roman;
+}
+footer {
+  background-color: #002147;
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  padding: 15px;
+  width: 100%;
+  margin-top: auto;
+}
