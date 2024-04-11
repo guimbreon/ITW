@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>Memory game</title>
     <link rel="icon" href="../images/decks/pokemon.png" type="images/png">
-    <link rel="stylesheet" href="../styles/general.css">
-    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/logRegStyle.css">
 </head>
 
 <body>
@@ -22,39 +21,56 @@
       </ul>
     </nav>
   </header>
-  <div class="borda">
-    <div>
-      <h2>Registo:</h2>
-      
-        <label>nome:</label>
-        <input type="text" >
+  <div class="topo"></div>
+  <div class="container">
+    <div class="registo">
+      <div>
+        <h2>Registo:</h2>
         
-        <label>senha:</label>
-        <input type="text" >
+          <label>username:</label>
+          <input type="text" >
+          
+          <label>senha:</label>
+          <input type="text" >
 
-        <label>e-mail:</label>
-        <input type="text" >
+          <label>e-mail:</label>
+          <input type="text" >
 
+      </div>
+      <p></p>
+      <div>
+        <label>Faixa-etaria:</label>
+        <select>
+          <option>0 - 12</option>
+          <option>13 - 17</option>
+          <option>18 - 23</option>
+          <option>24 - 30</option>
+          <option>30+</option>
+        </select>    
+        
+        <label>Genero:</label>
+        <select>
+          <option>Masculino</option>
+          <option>Feminino</option>
+          <option>Outro</option>
+        </select>
+        <a href="menu.html"><button>Registar</button></a>
+
+      </div>
     </div>
-    <p></p>
-    <div>
-      <label>Faixa-etaria:</label>
-      <select>
-        <option>0 - 12</option>
-        <option>13 - 17</option>
-        <option>18 - 23</option>
-        <option>24 - 30</option>
-        <option>30+</option>
-      </select>    
+    <div class="login">
+      <div>
+        <h2>Login:</h2>
+        
+          <label>username:</label>
+          <input type="text" >
+          
+          <label>senha:</label>
+          <input type="text" >
+      </div>
+      <p></p>
+        <a href="menu.html"><button>Login</button></a>
       
-      <label>Genero:</label>
-      <select>
-        <option>Masculino</option>
-        <option>Feminino</option>
-        <option>Outro</option>
-      </select>
-      <a href="menu.html"><button>Registar</button></a>
-
     </div>
   </div>
 </body>

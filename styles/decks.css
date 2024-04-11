@@ -1,3 +1,6 @@
+.decks{
+  padding: 0;
+}
 .decks img{
   height:120px;
   width:auto;
@@ -6,4 +9,20 @@
 
 .decks p, h1 {
   font-weight: bold;
+}
+
+.selva{
+  background-color: lightblue;
+  border-bottom: 8px dashed #E5E5E5;
+
+}
+
+.saude{
+  background-color: #E5E5E5;
+  border-bottom: 8px dashed lightblue;
+}
+
+.halloween{
+  background-color: lightblue;
+  border-bottom: 8px dashed #E5E5E5;
 }

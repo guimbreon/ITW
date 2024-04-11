@@ -1,10 +1,14 @@
 .player-options{
   float: right;
-  margin: 10px;
+
 }
 .player-options img{
   height:120px;
   width:auto;
+  border: 5px;
+  border-color: black;
+  border-style: solid;
+
 }
 
 .decks{

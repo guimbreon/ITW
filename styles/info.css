@@ -1,13 +1,48 @@
+@import url(general.css);
+@import url(info.css);
+
 ol li{
   list-style-type: upper-roman;
 }
-footer {
-  background-color: #002147;
-  color: white;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  padding: 15px;
-  width: 100%;
-  margin-top: auto;
+
+
+
+.video{
+  display: flex;
+  justify-content: center;
+}
+h1{
+  text-align:center;
+}
+.topo{
+  margin-top: 26px;
+  background-color: #E5E5E5;
+}
+
+.comoJogar{
+  background-color: lightblue;
+  border-top: 8px dashed #E5E5E5;
+
+}
+
+.curioso{
+  background-color: #E5E5E5;
+  border-top: 8px dashed lightblue;
+}
+
+.fichaTec{
+  border-top: 8px dashed #E5E5E5;
+  background-color: lightblue;
+}
+
+hr {
+  border: none;
+  border-top: 8px dashed lightblue;
+  background-color: #E5E5E5;
+  margin: 0;
+}
+
+footer{
+  border-top: 8px dashed lightblue;
+  
 }

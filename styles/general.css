@@ -3,7 +3,6 @@ body {
   font-family: Arial, sans-serif; /*MUDAR*/
   margin: 0;
   padding: 0;
-  background-image: url(../images/fundo.jpg);
 }
 h2 {
   color: black
@@ -16,6 +15,7 @@ header {
   padding: 18px;
   position: fixed;
   width: 100%;
+  top:0%;
 }
 
 header ul {
@@ -59,8 +59,22 @@ audio {
   top: 7px; /* Ajuste a distância da borda superior conforme necessário */
 }
 
-.borda {
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 50px;
+div{
+  padding: 13px;
+}
+
+footer {
+  background-color: #002147;
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.topo{
+  margin-top: 26px;
 }
