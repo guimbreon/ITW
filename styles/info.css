@@ -35,13 +35,6 @@ h1{
   background-color: lightblue;
 }
 
-hr {
-  border: none;
-  border-top: 8px dashed lightblue;
-  background-color: #E5E5E5;
-  margin: 0;
-}
-
 footer{
   border-top: 8px dashed lightblue;
   

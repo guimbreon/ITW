@@ -11,18 +11,13 @@
   font-weight: bold;
 }
 
-.selva{
+.cima{
   background-color: lightblue;
   border-bottom: 8px dashed #E5E5E5;
 
 }
 
-.saude{
+.baixo{
   background-color: #E5E5E5;
   border-bottom: 8px dashed lightblue;
-}
-
-.halloween{
-  background-color: lightblue;
-  border-bottom: 8px dashed #E5E5E5;
 }
