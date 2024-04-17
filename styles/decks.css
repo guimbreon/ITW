@@ -1,7 +1,7 @@
 .decks{
   padding: 0;
 }
-.decks img{
+.decks img, .tabuleiro img{
   height:120px;
   width:auto;
   margin: 5px;
@@ -12,3 +12,16 @@
 }
 
 
+}
+
+.baixo{
+  background-color: #E5E5E5;
+  border-bottom: 8px dashed lightblue;
+}
+
+
+.primeiraLinha, .segundaLinha, .terceiraLinha, .quartaLinha{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
