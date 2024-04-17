@@ -5,34 +5,12 @@ ol li{
   list-style-type: upper-roman;
 }
 
-
-
 .video{
   display: flex;
   justify-content: center;
 }
 h1{
   text-align:center;
-}
-.topo{
-  margin-top: 26px;
-  background-color: #E5E5E5;
-}
-
-.comoJogar{
-  background-color: lightblue;
-  border-top: 8px dashed #E5E5E5;
-
-}
-
-.curioso{
-  background-color: #E5E5E5;
-  border-top: 8px dashed lightblue;
-}
-
-.fichaTec{
-  border-top: 8px dashed #E5E5E5;
-  background-color: lightblue;
 }
 
 footer{

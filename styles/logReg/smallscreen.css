@@ -1,3 +1,6 @@
-.registo, .login {
-    flex-basis: 100%; /* Each item takes up 100% of the container width on smaller screens */
-  }
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+}

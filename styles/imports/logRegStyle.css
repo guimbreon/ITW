@@ -1,4 +1,6 @@
-@import "smallscreen.css"
-screen and (max-width: 599px);
 @import url(../general.css);
 @import url(../logReg/logReg.css);
+@import "../logReg/smallscreen.css"
+screen and (min-width: 800px);
+@import "../logReg/bigscreen.css"
+screen and (max-width: 800px);
