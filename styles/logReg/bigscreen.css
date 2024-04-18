@@ -2,3 +2,9 @@
   background-color: lightblue; /*mudar*/
   border-right: 8px dashed #E5E5E5;
 }
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+}
