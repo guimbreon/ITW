@@ -1,6 +1,3 @@
-@import url(general.css);
-@import url(info.css);
-
 ol li{
   list-style-type: upper-roman;
 }
@@ -16,4 +13,13 @@ h1{
 footer{
   border-top: 8px dashed lightblue;
   
+}
+.topo{
+  margin-top: 26px;
+  background-color: #E5E5E5;
+  border-bottom: 8px dashed lightblue;
+}
+
+.ultimo{
+  background-color: lightblue;
 }

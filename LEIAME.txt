@@ -2,16 +2,22 @@ Guilherme Soares nº 62372:
 
 - Aproximadamente 45% do projeto.
 
+Oque fez?
+- Pesquisa sobre os icons usados
+- Página dos infos + ficha tecnica
+- Design da página extra/decks.html onde tem a lista de cardas de cada deck.
+- Headers e footers
 
+Outra pessoa nºxxxxx:
+
+- Aproximadamente 27,5% do projeto.
+
+Oque fez?
+ - Completou com os decks na página extra/decks.html onde tem a lista de cardas de cada deck.
 
 
 Outra pessoa nºxxxxx:
 
 - Aproximadamente 27,5% do projeto.
 
-
-
-
-Outra pessoa nºxxxxx:
-
-- Aproximadamente 27,5% do projeto.
+Oque fez?
