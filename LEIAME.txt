@@ -7,17 +7,24 @@ Oque fez?
 - Página dos infos + ficha tecnica
 - Design da página extra/decks.html onde tem a lista de cardas de cada deck.
 - Headers e footers
+- Organização das pastas e dos styles
+- Menu
 
-Outra pessoa nºxxxxx:
+João Ribeiro nº62206:
 
 - Aproximadamente 27,5% do projeto.
 
 Oque fez?
  - Completou com os decks na página extra/decks.html onde tem a lista de cardas de cada deck.
+- Fez os tabuleiros de jogo
+- Home
 
 
-Outra pessoa nºxxxxx:
+Duarte Soares nº62371:
 
 - Aproximadamente 27,5% do projeto.
 
 Oque fez?
+- Design e implementação da pg de login
+- Design e implementação da pg de registro
+- Página das stats.
