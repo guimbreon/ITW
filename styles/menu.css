@@ -1,6 +1,13 @@
 .player-options{
   float: right;
+  background-color: #E5E5E5;
+  border-left: 8px dashed lightblue;
+  border-bottom: 8px dashed lightblue;
+  padding: 0;
+}
 
+body{
+  background-color: lightblue;
 }
 .player-options img{
   height:120px;
@@ -14,6 +21,11 @@
 .decks{
   margin-top: 200px;
   margin-left: 200px;
+  background-color: #E5E5E5;
+  border-bottom: 8px dashed  lightblue;
+  border-left: 8px dashed  lightblue;
+  border-top: 8px dashed  lightblue;
+  
   
 }
 .decks img{
@@ -22,10 +34,38 @@
   margin: 5px;
 }
 
+.decks-options{
+  text-align:center;
+}
+
+td{
+  height:60px;
+  width:100px;
+  padding:0px;
+  border-left: 2px solid rgb(108, 195, 224);
+  border-right: 2px solid rgb(108, 195, 224);
+  border-bottom: 2px solid rgb(108, 195, 224);
+}
+
+th {
+  width: 100px;
+  padding:0px;
+  border-left: 2px solid rgb(108, 195, 224);
+  border-right: 2px solid rgb(108, 195, 224);
+  border-top: 2px solid rgb(108, 195, 224);
+  padding:10px;
+}
+
 p{
   font-weight: bold;
-  
 }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
 .decks a {
   color: initial; /* Cor inicial do texto */
   text-decoration: none; /* Remover o underline */
