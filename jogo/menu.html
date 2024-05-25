@@ -1,55 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <!--
-  Guilherme Soares n 62372: PL23
-  João Ribeiro 62206: PL23
-  Duarte Soares  62371: PL23
+    RC: 2023-2024
+    GRUPO 13
+    Guilherme Soares n 62372: PL23
+    João Ribeiro 62206: PL23
+    Duarte Soares  62371: PL23
 -->
 <head>
     <meta charset="utf-8">
-    <title>Memory game</title>
+    <title>Jogo da memória</title>
     <link rel="icon" href="../images/decks/pokemon.png" type="images/png">
     <link rel="stylesheet" href="../styles/imports/menuStyle.css">
 </head>
 
 <body>
   <header>
-    <audio controls autoplay >
-      <source src="../sounds/Medieval Music Black Wolfs Inn.mp3" type="audio/mp3">
-      Your browser does not support the audio element.
-    </audio>
     <nav>
       <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../header/stats.html">Stats</a></li>
-        <li><a href="../header/info.html">Info</a></li>
+        <li><a href="../index/index.html">Página Inicial</a></li>
+        <li><a href="../header/stats.html">Estatísticas</a></li>
+        <li><a href="../header/info.html">Informações</a></li>
+        <li id="pessoal"></li>
       </ul>
     </nav>
   </header>
   
-  <div class="topo"></div>
-  
-  <div class="player-options">
-    <p>Players:</p>
-    <a href = "../jogo/1p.html"><img src = "../images/1p.png"></a>
-    <a href = "../jogo/2p.html"><img src = "../images/2p.png"></a>
+  <div class="topo">
+    <h1>Menu do Jogo!</h1>
   </div>
   <div class="decks">
-    <p><a href="../extra/decks.html">Opções de cartas:</a></p>
+    <p>Opções de cartas:</p>
+    <p>Quer saber que cartas existem em cada deck? Clique <a href="decks.html">AQUI</a></p>
     <div class="decks-options">
-      <table>
-        <tr>
-          <th><a href="../jogo/animaisDaSelva.html"><img src = "../images/flashcards/Jungle-animal-Lizard-flashcard.jpeg"></a></th>
-          <th><a href="../jogo/saude.html"><img src = "../images/HEALTH flashcards/health-flashcards-cut.jpeg"></a></th>
-          <th><a href="../jogo/halloween.html"><img src = "../images/halloween flashcards/coffin-flashcard.jpeg"></a></th>
-        </tr>
-        <tr>
-          <td><a href="../jogo/animaisDaSelva.html"><p>Animais Da Selva</p></a></td>
-          <td><a href="../jogo/saude.html"><p>Saúde</p></a></td>
-          <td><a href="../jogo/halloween.html"><p>Halloween</p></a></td>
-        </tr>
-      </table>
+      <div>
+        <table>
+          <tr id="decks">
+            <th id="thanimaisDaSelva"><button id="animaisDaSelva" onclick="selectDeck('animaisDaSelva')"><img src="../images/flashcards/Jungle-animal-Lizard-flashcard.jpeg"></button></th>
+            <th id="thsaude"><button id="saude" onclick="selectDeck('saude')"><img src="../images/HEALTH flashcards/health-flashcards-cut.jpeg"></button></th>
+            <th id="thhalloween"><button id="halloween" onclick="selectDeck('halloween')"><img src="../images/halloween flashcards/coffin-flashcard.jpeg"></button></th>
+            <th id="thdesporto"><button id="desporto" onclick="selectDeck('desporto')"><img src="../images/SPORTS flashcards/sports flashcards football-(soccer).jpeg"></button></th>
+            <th id="thdinossauros"><button id="dinossauros" onclick="selectDeck('dinossauros')"><img src="../images/DINOSAUR flashcards/Velociraptor.jpeg"></button></th>
+            <th id="thnatal"><button id="natal" onclick="selectDeck('natal')"><img src="../images/CHRISTMAS flashcards/Christmas-flashcards-Christmas-tree.jpeg"></button></th>
+            <th id="thplantas"><button id="plantas" onclick="selectDeck('plantas')"><img src="../images/PLANT flashcards/plant-flashcards-flower.jpeg"></button></th>
+            <th id="thsentimentos"><button id="sentimentos" onclick="selectDeck('sentimentos')"><img src="../images/Feelings flashcards/angry-boy.jpeg"></button></th>
+            <th id="thvegetais"><button id="vegetais" onclick="selectDeck('vegetais')"><img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-eggplant.jpeg"></button></th>
+            <th id="thtodos"><button id="todos" onclick="selectDeck('todos')"><img src="../images/todos.jpeg"></button></th>
+            
+          </tr>
+          <tr>
+            <td id="tdanimaisDaSelva"><p>Animais Da Selva</p></td>
+            <td id="tdsaude"><p>Saúde</p></td>
+            <td id="tdhalloween"><p>Dia das bruxas</p></td>
+            <td id="tddesporto"><p>Desporto</p></td>
+            <td id="tddinossauros"><p>Dinossauros</p></td>
+            <td id="tdnatal"><p>Natal</p></td>
+            <td id="tdplantas"><p>Plantas</p></td>
+            <td id="tdsentimentos"><p>Sentimentos</p></td>
+            <td id="tdvegetais"><p>Vegetais</p></td>
+            <td id="tdtodos"><p>Todos</p></td>
+
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div>
+      <p>Como deseja selecionar as cartas?</p>
+      <button id="decksClick" onclick="selectOption('decksClick')">Clicar</button>
+      <button id="decksInput" onclick="selectOption('decksInput')">Escrever</button>
+
+    </div>
+    <div id="tempo">
+      <p>O jogo tem tempo limite?</p>
+      <button id="tempoSim" onclick="selectTime('tempoSim')">Sim</button>
+      <button id="tempoNao" onclick="selectTime('tempoNao')">Não</button>
+
+    </div>
+    <div id="tempoMins">
+      <div id="tempoMinsEsq">
+        <p>Tempos disponiveis</p>
+        <button id="10m" onclick="selectMins('10m')">10m</button>
+        <button id="5m" onclick="selectMins('5m')">5m</button>
+        <button id="3m" onclick="selectMins('3m')">3m</button>
+        <button id="1m" onclick="selectMins('1m')">1m</button>
+      </div>
+      <div id="tempoMinsDir">
+        <p>Sem tempo limite -> 1 Ponto</p>
+        <p>10m -> 2 Pontos</p>
+        <p>5m -> 4 Pontos</p>
+        <p>3m -> 7 Pontos</p>
+        <p>1m -> 10 Pontos</p>
+      </div>
+    </div>
+    <div id="sendSelection">
+      <p>Selecionar</p>
+      <button onclick="sendSelection()">Selecionar</button>
     </div>
   </div>
+  <script src="../scripts/menu/menu.js"></script>
+  <script src="../scripts/logged.js"></script>
+
+  <footer>&copy; Jogo da memória 2024</footer>
 
 </body>
+</html>

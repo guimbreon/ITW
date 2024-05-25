@@ -1,1 +1,24 @@
-/*AINDA POR PREENCHER*/
+/*
+    RC: 2023-2024
+    GRUPO 13
+    Guilherme Soares n 62372: PL23
+    João Ribeiro 62206: PL23
+    Duarte Soares  62371: PL23
+*/
+
+#tabelaTodos{
+  overflow-x: scroll;
+  max-width: 100%;
+}
+
+body{
+    background-color: lightblue;
+}
+
+footer{
+    border-top: 8px dashed lightblue;
+}
+
+#tabelaStats, #tabelaTodos{
+    margin-bottom: 20x;
+}

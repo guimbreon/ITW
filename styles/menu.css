@@ -1,3 +1,11 @@
+/*
+    RC: 2023-2024
+    GRUPO 13
+    Guilherme Soares n 62372: PL23
+    João Ribeiro 62206: PL23
+    Duarte Soares  62371: PL23
+*/
+
 .player-options{
   float: right;
   background-color: #E5E5E5;
@@ -19,14 +27,9 @@ body{
 }
 
 .decks{
-  margin-top: 200px;
-  margin-left: 200px;
   background-color: #E5E5E5;
-  border-bottom: 8px dashed  lightblue;
-  border-left: 8px dashed  lightblue;
   border-top: 8px dashed  lightblue;
-  
-  
+   
 }
 .decks img{
   height:120px;
@@ -36,6 +39,9 @@ body{
 
 .decks-options{
   text-align:center;
+  overflow-x: scroll;
+  display: inline-block;
+  max-width: 90%;
 }
 
 td{
@@ -74,3 +80,26 @@ table {
 .decks a:hover {
   color: rgb(108, 195, 224); /* MUDAR */
 }
+
+footer {
+  border-top: 8px dashed #E5E5E5;
+}
+
+/* CSS styles */
+.selected {
+  background-color: darkblue;
+  color: aliceblue;
+}
+
+#tempoMins{
+  display: none;
+}
+
+th{
+  display: none;
+}
+
+td{
+  display: none;
+}
+

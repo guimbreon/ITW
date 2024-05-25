@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <!--
-  Guilherme Soares n 62372: PL23
-  João Ribeiro 62206: PL23
-  Duarte Soares  62371: PL23
+    RC: 2023-2024
+    GRUPO 13
+    Guilherme Soares n 62372: PL23
+    João Ribeiro 62206: PL23
+    Duarte Soares  62371: PL23
 -->
 <head>
     <meta charset="utf-8">
-    <title>Memory game</title>
+    <title>Jogo da memória</title>
     <link rel="icon" href="../images/decks/pokemon.png" type="images/png">
     <link rel="stylesheet" href="../styles/imports/logRegStyle.css">
 </head>
 
-<body>
+<body onload="principal()">
     <header>
-        <audio controls autoplay>
-            <source src="../sounds/Medieval Music Black Wolfs Inn.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../header/stats.html">Stats</a></li>
-                <li><a href="../header/info.html">Info</a></li>
+              <li><a href="../index/index.html">Página Inicial</a></li>
+              <li><a href="../header/stats.html">Estatísticas</a></li>
+              <li><a href="../header/info.html">Informações</a></li>
+                <li id="pessoal"></li>
             </ul>
         </nav>
     </header>
@@ -30,74 +29,75 @@
     <div class="container">
         <div class="registo">
             <h2>Registo:</h2>
-            <table>
-                <tr>
-                    <td class="spacer">
-                        <label>username:</label>
-                        <input type="text">
-                    </td>
-                    <td >
-                      <label>Faixa-etaria:</label>
-                      <select>
-                          <option>0 - 12</option>
-                          <option>13 - 17</option>
-                          <option>18 - 23</option>
-                          <option>24 - 30</option>
-                          <option>30+</option>
-                      </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="spacer">
-                        <label>senha:</label>
-                        <input type="text">
-                    </td>
-                    <td>
-                      <label>Gênero:</label>
-                      <select>
-                          <option>Masculino</option>
-                          <option>Feminino</option>
-                          <option>Outro</option>
-                      </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="spacer">
-                        <label>e-mail:</label>
-                        <input type="text">
-                        
-                    </td>
-                </tr>
-            </table>
+            <form id="frmReg">
+              <fieldset>
+              
+                <label for="regUsername">Nome de utilizador</label>
+                <input id="regUsername" type="text" 
+                        name="username" required
+                        maxlength="12" size="20">
+
+                <label for="regSenha">Senha</label>
+                <input id="regSenha" type="password" 
+                      name="senha" required
+                      maxlength="18" size="20">
+
+                <label for="regEmail">E-mail</label>
+                <input id="regEmail" type="email" 
+                      name="email" required
+                      maxlength="20" size="20">
+
+                    </fieldset>
+                    <fieldset>
+                <label for="selFaixaEt">Faixa etária</label>
+                <select id="selFaixaEt" name="faixaEt">
+                  <option value="crianca" selected>0-12</option>
+                  <option value="jovem" selected>13-18</option>
+                  <option value="adulto" selected>19-59</option>
+                  <option value="idoso" selected>60+</option>
+                </select>
+
+                <label for="selGenero">Género</label>
+                <select id="selGenero" name="genero">
+                  <option value="masc" selected>Masculino</option>
+                  <option value="fem">Feminino</option>
+                  <option value="nao">Prefiro não divulgar</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </fieldset>
+            </form>
             <p></p>
 
         
-            <a href="menu.html"><button>Registar</button></a>
+            <button type="button" onclick="criaUser()">Registar</button>
        
         </div>
         <div class="login">
-          <h2>Login:</h2>
-            <table>
-              <tr>
-                <td class="spacer">
-                  <label>username:</label>
-                  <input type="text">
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td class="spacer">
-                  <label>senha:</label>
-                  <input type="text">
-                </td>
-                
-                <td></td>
-              </tr>
-            </table>
+          <h2>Entrar:</h2>
+          
+          <form id="frmLogin">
+            <fieldset >
+            
+              <label for="loginUsername">Nome de utilizador</label>
+              <input id="loginUsername" type="text" 
+                      name="username" required
+                      maxlength="12" size="20">
+
+              <label for="loginSenha">Senha</label>
+              <input id="loginSenha" type="password" 
+                    name="senha" required
+                    maxlength="18" size="20">
+
+                  </fieldset>
+          </form>
             <p></p>
 
-            <a href="menu.html"><button>Login</button></a>
+            <button type="button" onclick="fazerLogin()">Entrar</button>
         </div>
     </div>
+    
+  <footer>&copy; Jogo da memória 2024</footer>
+  <script src="../scripts/logReg.js"></script>
+  <script src="../scripts/logged.js"></script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+
+  
+  .scratch-card {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .scratch-price {
+    font-size: 14px;
+  }
+  
+  .scratch-image {
+    width: 200px;
+    cursor: pointer;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: green;
+  }
+
+.topo{
+  padding: calc(10px + 1%);
+
+}
+  
+
+#fim{
+  padding: calc(10px + 8%);
+}

@@ -3,6 +3,7 @@ Guilherme Soares nº 62372:
 - Aproximadamente 45% do projeto.
 
 Oque fez?
+#1º parte
 - Pesquisa sobre os icons usados
 - Página dos infos + ficha tecnica
 - Design da página extra/decks.html onde tem a lista de cardas de cada deck.
@@ -10,17 +11,35 @@ Oque fez?
 - Organização das pastas e dos styles
 - Menu
 
+#2º parte
+- Sistema do jogo(movimentos, verificar se já ganhou, pontos) clicks e input;
+- Sistema de pontos, guardar em localStorage timers e Loja;
+- Loader dos tabuleiros;
+- MiniJogo Secreto;
+- Sistema de seleção no Menu do jogo.
+
+
+------------------------------------------------------------------------------------------------------------------------
 João Ribeiro nº62206:
+#1º parte
 
 - Aproximadamente 27,5% do projeto.
 
 Oque fez?
- - Completou com os decks na página extra/decks.html onde tem a lista de cardas de cada deck.
+ - Completou com os decks na página extra/decks.html onde tem a lista de cartas de cada deck.
 - Fez os tabuleiros de jogo
 - Home
 
 
+#2º parte
+- Tabelas;
+- Página Informações no Header;
+ - Completou parte dos decks na página decks.html onde tem a lista de cartas de cada deck.
+
+
+------------------------------------------------------------------------------------------------------------------------
 Duarte Soares nº62371:
+#1º parte
 
 - Aproximadamente 27,5% do projeto.
 
@@ -28,3 +47,11 @@ Oque fez?
 - Design e implementação da pg de login
 - Design e implementação da pg de registro
 - Página das stats.
+
+
+#2º parte
+
+- Página de Fim do jogo;
+- Organização do Perfil;
+ - Completou parte dos decks na página decks.html onde tem a lista de cartas de cada deck.
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<!--
+    RC: 2023-2024
+    GRUPO 13
+    Guilherme Soares n 62372: PL23
+    João Ribeiro 62206: PL23
+    Duarte Soares  62371: PL23
+-->
+    <head>
+        <meta charset="utf-8">
+        <title>Jogo da memória</title>
+        <link rel="icon" href="../images/decks/pokemon.png" type="images/png">
+        <link rel="stylesheet" href="../styles/imports/decksStyle.css">
+        <link rel="stylesheet" href="../styles/tabuleiro.css">
+
+    </head>
+
+    <body>
+        <header>
+            <nav>
+            <ul>
+                <li><a href="../index/index.html">Página Inicial</a></li>
+                <li><a href="../header/stats.html">Estatísticas</a></li>
+                <li><a href="../header/info.html">Informações</a></li>
+                <li id="pessoal"></li>
+            </ul>
+            </nav>
+        </header>
+        <div class="borda">
+                <h1>Jogo</h1>
+                <a href="menu.html"><img src="../images/arrow-to-the-left-silhouette.png" style="height: 25px; width: auto;"></a>
+            
+            <div class="tabuleiro">
+                <div class="topTabuleiro">
+                    <div id="timer"></div>
+                    <button id="stopButton">Finalizar jogo</button>
+                    <div id="pontos">pontos</div>
+                    <div id="corretas"></div>
+                    
+                </div>
+                
+                <div id = "input"></div>
+                <div class="Linha1">
+                </div>
+                <div class="Linha2">
+                </div>
+                <div class="Linha3">
+                </div>
+                <div class="Linha4">
+                </div>
+                <div class="Linha5">
+                </div>
+                <audio controls autoplay src="../sounds/medieval.mp3" type="audio/mp3"></audio>
+            </div>
+            
+        </div>
+    <script src="../scripts/menu/loader.js"></script>
+    <script id = "alwaysHere">
+        // Define a function to be executed after 100ms
+        function executeAfterDelay() {
+          mostrar(todasCartas);
+        }
+      
+        // Call the function after 100ms
+        setTimeout(executeAfterDelay, 100);
+      </script>
+      
+
+    <footer>&copy; Jogo da memória 2024</footer>
+    <script src="../scripts/Finishgame.js"></script>
+    <script src="../scripts/deckTimer.js"></script>
+    <script src="../scripts/pontos.js"></script>
+    <script src="../scripts/logged.js"></script>
+    </body>
+</html>

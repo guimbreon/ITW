@@ -1,3 +1,11 @@
+/*
+    RC: 2023-2024
+    GRUPO 13
+    Guilherme Soares n 62372: PL23
+    João Ribeiro 62206: PL23
+    Duarte Soares  62371: PL23
+*/
+
 /* General Styles */
 body {
   font-family: Arial, sans-serif; /*MUDAR*/
@@ -16,6 +24,7 @@ header {
   position: fixed;
   width: 100%;
   top:0%;
+  z-index: 999;
 }
 
 header ul {
@@ -52,11 +61,8 @@ nav ul li a {
 }
 
 audio {
-  width: 50px; /* Defina a largura desejada */
-  height: auto; /* Deixe a altura ajustável para manter a proporção */
-  position: absolute;
-  left: 10px; /* Ajuste a distância da borda esquerda conforme necessário */
-  top: 7px; /* Ajuste a distância da borda superior conforme necessário */
+  width: calc(100px + 10%); /* Defina a largura desejada */
+  height: 17.6; /* Deixe a altura ajustável para manter a proporção */
 }
 
 div{
@@ -64,15 +70,15 @@ div{
 }
 
 footer {
+  border-top: 8px dashed #E5E5E5;
   background-color: #002147;
   color: white;
   text-align: center;
-  position: relative;
-  bottom: 0;
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100%;
-  margin-top: auto;
+  position: relative; /* Change position to relative */
+  bottom: 0;
 }
 
 .topo{
@@ -80,12 +86,20 @@ footer {
 }
 
 .cima{
-  background-color: lightblue;
-  border-bottom: 8px dashed #E5E5E5;
+  background-color: #add8e6;
+  border-bottom: 8px dashed #e5e5e5;
 
 }
 
 .baixo{
   background-color: #E5E5E5;
   border-bottom: 8px dashed lightblue;
+}
+.borda{
+  margin-top: 25px;
+}
+#borda{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
 }

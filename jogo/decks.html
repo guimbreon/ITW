@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <!--
-  Guilherme Soares n 62372: PL23
-  João Ribeiro 62206: PL23
-  Duarte Soares  62371: PL23
+    RC: 2023-2024
+    GRUPO 13
+    Guilherme Soares n 62372: PL23
+    João Ribeiro 62206: PL23
+    Duarte Soares  62371: PL23
 -->
 <head>
     <meta charset="utf-8">
-    <title>Memory game</title>
+    <title>Jogo da memória</title>
     <link rel="stylesheet" href="../styles/imports/decksStyle.css">
     <link rel="icon" href="../images/decks/pokemon.png" type="images/png">
 </head>
@@ -15,109 +17,255 @@
     <header>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../header/stats.html">Stats</a></li>
-                <li><a href="../header/info.html">Info</a></li>
+                <li><a href="../index/index.html">Página Inicial</a></li>
+                <li><a href="../header/stats.html">Estatísticas</a></li>
+                <li><a href="../header/info.html">Informações</a></li>
             </ul>
         </nav>
     </header>
     <div class="decks">
-        <a href="../jogo/menu.html"><img src="../images/arrow-to-the-left-silhouette.png" ></a>
+        <a  href="../jogo/menu.html"><img id="seta" src="../images/arrow-to-the-left-silhouette.png" style="height: 25px; width: auto;"></a>
         
         <div class="cima">
             <p>Animais da Selva</p>
-            <img src="../images/flashcards/Jungle-animal-Lizard-flashcard.jpeg">
-            <img src="../images/flashcards/Jungle-animal--anteater-flashcard.jpeg">
-            <img src="../images/flashcards/Jungle-animal--bat-flashcard.jpeg">
-            <img src="../images/flashcards/Jungle-animal--flamingo-flashcard.jpeg">
-            <img src="../images/flashcards/Jungle-animal--gorilla-flashcard.jpeg">
-            <img src="../images/flashcards/Jungle-animal--iguana-flashcard.jpeg">
-            <img src="../images/flashcards/Jungle-animal-monkey-flashcard.jpeg">
-            <img src="../images/flashcards/Jungle-animal-panda-flashcard.jpeg">
-            <img src="../images/flashcards/Jungle-animal-parrot-flashcard.jpeg">
-            <img src="../images/flashcards/Jungle-animal-sloth-flashcard.jpeg">
-            <img src="../images/flashcards/Jungle-animal-snake-flashcard.jpeg">
-            <img src="../images/flashcards/Jungle-animal-tiger-flashcard.jpeg">
-            <!-- <img src="../images/flashcards/Jungle-animal-toucan-flashcard.jpeg"> -->
+            <img src="../images/flashcards/Jungle-animal-Lizard-flashcard.jpeg" alt="Lagarto">
+            <img src="../images/flashcards/Jungle-animal--anteater-flashcard.jpeg" alt="Tamanduá">
+            <img src="../images/flashcards/Jungle-animal--bat-flashcard.jpeg" alt="Morcego">
+            <img src="../images/flashcards/Jungle-animal--flamingo-flashcard.jpeg" alt="Flamingo">
+            <img src="../images/flashcards/Jungle-animal--gorilla-flashcard.jpeg" alt="Gorila">
+            <img src="../images/flashcards/Jungle-animal--iguana-flashcard.jpeg" alt="Iguana">
+            <img src="../images/flashcards/Jungle-animal-monkey-flashcard.jpeg" alt="Macaco">
+            <img src="../images/flashcards/Jungle-animal-panda-flashcard.jpeg" alt="Panda">
+            <img src="../images/flashcards/Jungle-animal-parrot-flashcard.jpeg" alt="Papagaio">
+            <img src="../images/flashcards/Jungle-animal-sloth-flashcard.jpeg" alt="Preguiça">
+            <img src="../images/flashcards/Jungle-animal-snake-flashcard.jpeg" alt="Cobra">
+            <img src="../images/flashcards/Jungle-animal-tiger-flashcard.jpeg" alt="Tigre">
+            <!-- <img src="../images/flashcards/Jungle-animal-toucan-flashcard.jpeg" alt="Tucano"> -->
         </div>
         <div class="baixo">
             <p>Saúde</p>
-            <img src="../images/HEALTH flashcards/health-flashcards-cut.jpeg">
-            <img src="../images/HEALTH flashcards/health-flashcards-asthma.jpeg">
-            <img src="../images/HEALTH flashcards/health-flashcards-backache.jpeg">
-            <img src="../images/HEALTH flashcards/health-flashcards-broken-arm.jpeg">
-            <img src="../images/HEALTH flashcards/health-flashcards-broken-leg.jpeg">
-            <img src="../images/HEALTH flashcards/health-flashcards-cold.jpeg">
-            <img src="../images/HEALTH flashcards/health-flashcards-cough.jpeg">
-            <img src="../images/HEALTH flashcards/health-flashcards-earache.jpeg">
-            <img src="../images/HEALTH flashcards/health-flashcards-fever.jpeg">
-            <img src="../images/HEALTH flashcards/health-flashcards-headache.jpeg">
-            <img src="../images/HEALTH flashcards/health-flashcards-nosebleed.jpeg">
-            <img src="../images/HEALTH flashcards/health-flashcards-rash.jpeg">
-            <img src="../images/HEALTH flashcards/health-flashcards-runny-nose.jpeg">
-            <img src="../images/HEALTH flashcards/health-flashcards-sneeze.jpeg">
-            <img src="../images/HEALTH flashcards/health-flashcards-sore-throat.jpeg">
-            <img src="../images/HEALTH flashcards/health-flashcards-stomach-ache.jpeg">
-            <img src="../images/HEALTH flashcards/health-flashcards-sun-burn.jpeg">
-            <img src="../images/HEALTH flashcards/health-flashcards-toothache.jpeg">
+            <img src="../images/HEALTH flashcards/health-flashcards-cut.jpeg" alt="Corte">
+            <img src="../images/HEALTH flashcards/health-flashcards-asthma.jpeg" alt="Asma">
+            <img src="../images/HEALTH flashcards/health-flashcards-backache.jpeg" alt="Dor nas Costas">
+            <img src="../images/HEALTH flashcards/health-flashcards-broken-arm.jpeg" alt="Braço Quebrado">
+            <img src="../images/HEALTH flashcards/health-flashcards-broken-leg.jpeg" alt="Perna Quebrada">
+            <img src="../images/HEALTH flashcards/health-flashcards-cold.jpeg" alt="Resfriado">
+            <img src="../images/HEALTH flashcards/health-flashcards-cough.jpeg" alt="Tosse">
+            <img src="../images/HEALTH flashcards/health-flashcards-earache.jpeg" alt="Dor de Ouvido">
+            <img src="../images/HEALTH flashcards/health-flashcards-fever.jpeg" alt="Febre">
+            <img src="../images/HEALTH flashcards/health-flashcards-headache.jpeg" alt="Dor de Cabeça">
+            <img src="../images/HEALTH flashcards/health-flashcards-nosebleed.jpeg" alt="Sangramento Nasal">
+            <img src="../images/HEALTH flashcards/health-flashcards-rash.jpeg" alt="Erupção Cutânea">
+            <img src="../images/HEALTH flashcards/health-flashcards-runny-nose.jpeg" alt="Nariz Escorrendo">
+            <img src="../images/HEALTH flashcards/health-flashcards-sneeze.jpeg" alt="Espirro">
+            <img src="../images/HEALTH flashcards/health-flashcards-sore-throat.jpeg" alt="Dor de Garganta">
+            <img src="../images/HEALTH flashcards/health-flashcards-stomach-ache.jpeg" alt="Dor de Estômago">
+            <img src="../images/HEALTH flashcards/health-flashcards-sun-burn.jpeg" alt="Queimadura de Sol">
+            <img src="../images/HEALTH flashcards/health-flashcards-toothache.jpeg" alt="Dor de Dente">
         </div>
         <div class="cima">
             <p>Halloween</p>
-            <img src="../images/halloween flashcards/bat-flashcard.jpeg">
-            <img src="../images/halloween flashcards/black-cat-flashcard.jpeg">
-            <img src="../images/halloween flashcards/candle-flashcard.jpeg">
-            <img src="../images/halloween flashcards/candy-flashcard.jpeg">
-            <img src="../images/halloween flashcards/cauldron-flashcard.jpeg">
-            <img src="../images/halloween flashcards/coffin-flashcard.jpeg">
-            <img src="../images/halloween flashcards/crow-flashcards.jpeg">
-            <img src="../images/halloween flashcards/death-flashcard.jpeg">
-            <img src="../images/halloween flashcards/devil-flashcard.jpeg">
-            <img src="../images/halloween flashcards/Frankenstein-flashcard.jpeg">
-            <img src="../images/halloween flashcards/ghost-flashcard.jpeg">
-            <img src="../images/halloween flashcards/grave-flashcard.jpeg">
-            <img src="../images/halloween flashcards/haunted-house.jpeg">
-            <img src="../images/halloween flashcards/invisible-man-flashcard.jpeg">
-            <img src="../images/halloween flashcards/monster-flashcard.jpeg">
-            <img src="../images/halloween flashcards/moon-flashcard.jpeg">
-            <img src="../images/halloween flashcards/mummy-flashcard.jpeg">
-            <img src="../images/halloween flashcards/pumpkin-flashcard.jpeg">
-            <img src="../images/halloween flashcards/pumpkin-pie-flashcard.jpeg">
-            <img src="../images/halloween flashcards/skeleton-flashcard.jpeg">
-            <img src="../images/halloween flashcards/skull-flashcard.jpeg">
-            <img src="../images/halloween flashcards/spider-flashcards.jpeg">
-            <img src="../images/halloween flashcards/spider-web-flashcard.jpeg">
-            <img src="../images/halloween flashcards/vampire-flashcard.jpeg">
-            <img src="../images/halloween flashcards/voodoo-doll-flashcard.jpeg">
-            <img src="../images/halloween flashcards/werewolf-flashcard.jpeg">
-            <img src="../images/halloween flashcards/witch-flashcard.jpeg">
-            <img src="../images/halloween flashcards/zombie-flashcard.jpeg">
+            <img src="../images/halloween flashcards/bat-flashcard.jpeg" alt="Morcego">
+            <img src="../images/halloween flashcards/black-cat-flashcard.jpeg" alt="Gato Preto">
+            <img src="../images/halloween flashcards/candle-flashcard.jpeg" alt="Vela">
+            <img src="../images/halloween flashcards/candy-flashcard.jpeg" alt="Doce">
+            <img src="../images/halloween flashcards/cauldron-flashcard.jpeg" alt="Caldeirão">
+            <img src="../images/halloween flashcards/coffin-flashcard.jpeg" alt="Caixão">
+            <img src="../images/halloween flashcards/crow-flashcards.jpeg" alt="Corvo">
+            <img src="../images/halloween flashcards/death-flashcard.jpeg" alt="Morte">
+            <img src="../images/halloween flashcards/devil-flashcard.jpeg" alt="Diabo">
+            <img src="../images/halloween flashcards/Frankenstein-flashcard.jpeg" alt="Frankenstein">
+            <img src="../images/halloween flashcards/ghost-flashcard.jpeg" alt="Fantasma">
+            <img src="../images/halloween flashcards/grave-flashcard.jpeg" alt="Túmulo">
+            <img src="../images/halloween flashcards/haunted-house.jpeg" alt="Casa Assombrada">
+            <img src="../images/halloween flashcards/invisible-man-flashcard.jpeg" alt="Homem Invisível">
+            <img src="../images/halloween flashcards/monster-flashcard.jpeg" alt="Monstro">
+            <img src="../images/halloween flashcards/moon-flashcard.jpeg" alt="Lua">
+            <img src="../images/halloween flashcards/mummy-flashcard.jpeg" alt="Múmia">
+            <img src="../images/halloween flashcards/pumpkin-flashcard.jpeg" alt="Abóbora">
+            <img src="../images/halloween flashcards/pumpkin-pie-flashcard.jpeg" alt="Torta de Abóbora">
+            <img src="../images/halloween flashcards/skeleton-flashcard.jpeg" alt="Esqueleto">
+            <img src="../images/halloween flashcards/skull-flashcard.jpeg" alt="Crânio">
+            <img src="../images/halloween flashcards/spider-flashcards.jpeg" alt="Aranha">
+            <img src="../images/halloween flashcards/spider-web-flashcard.jpeg" alt="Teia de Aranha">
+            <img src="../images/halloween flashcards/vampire-flashcard.jpeg" alt="Vampiro">
+            <img src="../images/halloween flashcards/voodoo-doll-flashcard.jpeg" alt="Boneco Vodu">
+            <img src="../images/halloween flashcards/werewolf-flashcard.jpeg" alt="Lobisomem">
+            <img src="../images/halloween flashcards/witch-flashcard.jpeg" alt="Bruxa">
+            <img src="../images/halloween flashcards/zombie-flashcard.jpeg" alt="Zumbi">
         </div>
+        <div class="baixo">
+            <p>Plantas</p>
+            <img src="../images/PLANT flashcards/plant-flashcards-rain.jpeg" alt="Rain">
+            <img src="../images/PLANT flashcards/plant-flashcards-roots.jpeg" alt="Roots">
+            <img src="../images/PLANT flashcards/plant-flashcards-seed.jpeg" alt="Seed">
+            <img src="../images/PLANT flashcards/plant-flashcards-seeds.jpeg" alt="Seeds">
+            <img src="../images/PLANT flashcards/plant-flashcards-soil.jpeg" alt="Soil">
+            <img src="../images/PLANT flashcards/plant-flashcards-sprout.jpeg" alt="Sprout">
+            <img src="../images/PLANT flashcards/plant-flashcards-stem.jpeg" alt="Stem">
+            <img src="../images/PLANT flashcards/plant-flashcards-sun.jpeg" alt="Sun">
+            <img src="../images/PLANT flashcards/plant-flashcards-tree.jpeg" alt="Tree">
+            <img src="../images/PLANT flashcards/plant-flashcards-tree-leaves.jpeg" alt="Tree Leaves">
+            <img src="../images/PLANT flashcards/plant-flashcards-tree-roots.jpeg" alt="Tree Roots">
+            <img src="../images/PLANT flashcards/plant-flashcards-trunk.jpeg" alt="Trunk">
+            <img src="../images/PLANT flashcards/plant-flashcards-wind.jpeg" alt="Wind">
+            <img src="../images/PLANT flashcards/plant-flashcards-bark.jpeg" alt="Bark">
+            <img src="../images/PLANT flashcards/plant-flashcards-branch.jpeg" alt="Branch">
+            <img src="../images/PLANT flashcards/plant-flashcards-bush.jpeg" alt="Bush">
+            <img src="../images/PLANT flashcards/plant-flashcards-flower.jpeg" alt="Flower">
+            <img src="../images/PLANT flashcards/plant-flashcards-garden.jpeg" alt="Garden">
+            <img src="../images/PLANT flashcards/plant-flashcards-leaves.jpeg" alt="Leaves">
+            <img src="../images/PLANT flashcards/plant-flashcards-petal.jpeg" alt="Petal">
+            <img src="../images/PLANT flashcards/plant-flashcards-petals.jpeg" alt="Petals">
+        </div>
+        <div class="cima">
+            <p>Sentimentos</p>
+            <img src="../images/Feelings flashcards/happy-boy.jpeg" alt="Happy Boy">
+            <img src="../images/Feelings flashcards/happy-girl.jpeg" alt="Happy Girl">
+            <img src="../images/Feelings flashcards/hungry-boy.jpeg" alt="Hungry Boy">
+            <img src="../images/Feelings flashcards/hungry-girl.jpeg" alt="Hungry Girl">
+            <img src="../images/Feelings flashcards/sad-boy.jpeg" alt="Sad Boy">
+            <img src="../images/Feelings flashcards/sad-girl.jpeg" alt="Sad Girl">
+            <img src="../images/Feelings flashcards/scared-boy.jpeg" alt="Scared Boy">
+            <img src="../images/Feelings flashcards/scared-girl.jpeg" alt="Scared Girl">
+            <img src="../images/Feelings flashcards/thirsty-boy.jpeg" alt="Thirsty Boy">
+            <img src="../images/Feelings flashcards/thirsty-girl.jpeg" alt="Thirsty Girl">
+            <img src="../images/Feelings flashcards/tired-boy.jpeg" alt="Tired Boy">
+            <img src="../images/Feelings flashcards/tired-girl.jpeg" alt="Tired Girl">
+            <img src="../images/Feelings flashcards/angry-boy.jpeg" alt="Angry Boy">
+            <img src="../images/Feelings flashcards/angry-girl.jpeg" alt="Angry Girl">
+            <img src="../images/Feelings flashcards/blank-boy.jpeg" alt="Blank Boy">
+            <img src="../images/Feelings flashcards/blank-girl.jpeg" alt="Blank Girl">
+        </div>
+        <div class="baixo">
+            <p>Vegetais</p>
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-asparagus.jpeg" alt="Asparagus">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-avocado.jpeg" alt="Avocado">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-beans.jpeg" alt="Beans">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-beats.jpeg" alt="Beats">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-broccoli.jpeg" alt="Broccoli">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-cabbage.jpeg" alt="Cabbage">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-carrot.jpeg" alt="Carrot">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-cauliflower.jpeg" alt="Cauliflower">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-chilli.jpeg" alt="Chilli">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-corn.jpeg" alt="Corn">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-cucumber.jpeg" alt="Cucumber">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-eggplant.jpeg" alt="Eggplant">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-garlic.jpeg" alt="Garlic">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-leek.jpeg" alt="Leek">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-lettuce.jpeg" alt="Lettuce">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-mushroom.jpeg" alt="Mushroom">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-onion.jpeg" alt="Onion">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-pepper.jpeg" alt="Pepper">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-pickle.jpeg" alt="Pickle">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-potato.jpeg" alt="Potato">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-pumpkin.jpeg" alt="Pumpkin">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-raddish.jpeg" alt="Raddish">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-spinach.jpeg" alt="Spinach">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-sproats.jpeg" alt="Sproats">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-sweet-potato.jpeg" alt="Sweet Potato">
+            <img src="../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-tomato.jpeg" alt="Tomato">
+        </div>
+        <div class="cima">
+            <p>Desportos</p>
+            <img src="../images/SPORTS flashcards/sports flashcards American-Football.jpeg" alt="American Football">
+            <img src="../images/SPORTS flashcards/sports flashcards archery.jpeg" alt="Archery">
+            <img src="../images/SPORTS flashcards/sports flashcards badminton.jpeg" alt="Badminton">
+            <img src="../images/SPORTS flashcards/sports flashcards baseball.jpeg" alt="Baseball">
+            <img src="../images/SPORTS flashcards/sports flashcards basketball.jpeg" alt="Basketball">
+            <img src="../images/SPORTS flashcards/sports flashcards bowling.jpeg" alt="Bowling">
+            <img src="../images/SPORTS flashcards/sports flashcards boxing.jpeg" alt="Boxing">
+            <img src="../images/SPORTS flashcards/sports flashcards cricket.jpeg" alt="Cricket">
+            <img src="../images/SPORTS flashcards/sports flashcards cycling.jpeg" alt="Cycling">
+            <img src="../images/SPORTS flashcards/sports flashcards darts.jpeg" alt="Darts">
+            <img src="../images/SPORTS flashcards/sports flashcards fencing.jpeg" alt="Fencing">
+            <img src="../images/SPORTS flashcards/sports flashcards fishing.jpeg" alt="Fishing">
+            <img src="../images/SPORTS flashcards/sports flashcards football-(soccer).jpeg" alt="Football (Soccer)">
+            <img src="../images/SPORTS flashcards/sports flashcards football.jpeg" alt="Football">
+            <img src="../images/SPORTS flashcards/sports flashcards golf.jpeg" alt="Golf">
+            <img src="../images/SPORTS flashcards/sports flashcards ice-hockey.jpeg" alt="Ice Hockey">
+            <img src="../images/SPORTS flashcards/sports flashcards ice-skating.jpeg" alt="Ice Skating">
+            <img src="../images/SPORTS flashcards/sports flashcards inline-skating.jpeg" alt="Inline Skating">
+            <img src="../images/SPORTS flashcards/sports flashcards judo.jpeg" alt="Judo">
+            <img src="../images/SPORTS flashcards/sports flashcards karate.jpeg" alt="Karate">
+            <img src="../images/SPORTS flashcards/sports flashcards pool.jpeg" alt="Pool">
+            <img src="../images/SPORTS flashcards/sports flashcards rock-climbing.jpeg" alt="Rock Climbing">
+            <img src="../images/SPORTS flashcards/sports flashcards rowing.jpeg" alt="Rowing">
+            <img src="../images/SPORTS flashcards/sports flashcards rugby.jpeg" alt="Rugby">
+            <img src="../images/SPORTS flashcards/sports flashcards sailing.jpeg" alt="Sailing">
+            <img src="../images/SPORTS flashcards/sports flashcards show-jumping.jpeg" alt="Show Jumping">
+            <img src="../images/SPORTS flashcards/sports flashcards skating.jpeg" alt="Skating">
+            <img src="../images/SPORTS flashcards/sports flashcards skiing.jpeg" alt="Skiing">
+            <img src="../images/SPORTS flashcards/sports flashcards snowboarding.jpeg" alt="Snowboarding">
+            <img src="../images/SPORTS flashcards/sports flashcards soccer.jpeg" alt="Soccer">
+            <img src="../images/SPORTS flashcards/sports flashcards surfing.jpeg" alt="Surfing">
+            <img src="../images/SPORTS flashcards/sports flashcards swimming.jpeg" alt="Swimming">
+            <img src="../images/SPORTS flashcards/sports flashcards table-tennis.jpeg" alt="Table Tennis">
+            <img src="../images/SPORTS flashcards/sports flashcards tennis.jpeg" alt="Tennis">
+            <img src="../images/SPORTS flashcards/sports flashcards volleyball.jpeg" alt="Volleyball">
+            <img src="../images/SPORTS flashcards/sports flashcards wrestling.jpeg" alt="Wrestling">
+        </div>
+        <div class="baixo">
+            <p>Dinossauro</p>
+            <img src="../images/DINOSAUR flashcards/Pteranodon.jpeg" alt="Pteranodon">
+            <img src="../images/DINOSAUR flashcards/Spinosaurus.jpeg" alt="Spinosaurus">
+            <img src="../images/DINOSAUR flashcards/Stegosaurus.jpeg" alt="Stegosaurus">
+            <img src="../images/DINOSAUR flashcards/T-Rex.jpeg" alt="T-Rex">
+            <img src="../images/DINOSAUR flashcards/Triceratops.jpeg" alt="Triceratops">
+            <img src="../images/DINOSAUR flashcards/Velociraptor.jpeg" alt="Velociraptor">
+            <img src="../images/DINOSAUR flashcards/Allosaurus.jpeg" alt="Allosaurus">
+            <img src="../images/DINOSAUR flashcards/Ankylosaurus.jpeg" alt="Ankylosaurus">
+            <img src="../images/DINOSAUR flashcards/Apatosaurus.jpeg" alt="Apatosaurus">
+            <img src="../images/DINOSAUR flashcards/Archaeopteryx.jpeg" alt="Archaeopteryx">
+            <img src="../images/DINOSAUR flashcards/Brachiosaurus.jpeg" alt="Brachiosaurus">
+            <img src="../images/DINOSAUR flashcards/Brontosaurus.jpeg" alt="Brontosaurus">
+            <img src="../images/DINOSAUR flashcards/Coelophysis.jpeg" alt="Coelophysis">
+            <img src="../images/DINOSAUR flashcards/Dilophosaurus.jpeg" alt="Dilophosaurus">
+            <img src="../images/DINOSAUR flashcards/Elasmosaurus.jpeg" alt="Elasmosaurus">
+            <img src="../images/DINOSAUR flashcards/parasaurolophus.jpeg" alt="Parasaurolophus">
+        </div>
+        <div>
+            <p>Natal</p>
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-Christmas-hat.jpeg" alt="Christmas Hat">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-Christmas-lights.jpeg" alt="Christmas Lights">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-Christmas-pudding.jpeg" alt="Christmas Pudding">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-Christmas-tree.jpeg" alt="Christmas Tree">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-crackers.jpeg" alt="Crackers">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-decorations.jpeg" alt="Decorations">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-elf.jpeg" alt="Elf">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-fireplace.jpeg" alt="Fireplace">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-gingerbread-man.jpeg" alt="Gingerbread Man">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-holly.jpeg" alt="Holly">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-mince-pies.jpeg" alt="Mince Pies">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-mistletoe.jpeg" alt="Mistletoe">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-mittens.jpeg" alt="Mittens">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-Mrs.-Claus.jpeg" alt="Mrs. Claus">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-penguin.jpeg" alt="Penguin">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-polar-bear.jpeg" alt="Polar Bear">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-presents.jpeg" alt="Presents">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-reindeer.jpeg" alt="Reindeer">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-Rudolf.jpeg" alt="Rudolf">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-Santa.jpeg" alt="Santa">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-Santa's-Grotto.jpeg" alt="Santa's Grotto">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-sleigh.jpeg" alt="Sleigh">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-snowflake.jpeg" alt="Snowflake">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-snowglobe.jpeg" alt="Snowglobe">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-snowman.jpeg" alt="Snowman">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-star.jpeg" alt="Star">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-stocking.jpeg" alt="Stocking">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-toys.jpeg" alt="Toys">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-turkey.jpeg" alt="Turkey">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-wreath.jpeg" alt="Wreath">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-bells.jpeg" alt="Bells">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-candle.jpeg" alt="Candle">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-candy-cane.jpeg" alt="Candy Cane">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-chimney.jpeg" alt="Chimney">
+            <img src="../images/CHRISTMAS flashcards/Christmas-flashcards-Christmas.jpeg" alt="Christmas">
+        </div>        
     </div>
-    <!--
-        Se forem colocar + decks de cartas colocar as classes organizadas
-        neste momento está:
-        cima
-        baixo
-        cima
-        ----
-        em seguida será:
-        baixo
-        cima
-        
-        baixo
-        cima
-        
-        baixo
-        cima
-        
-        baixo
-        cima
-        
-        baixo
-        cima
-        ----
-        acho q dá para perceber.
-    -->
 
+    <script src="../scripts/logged.js"></script>
+    <footer>&copy; Jogo da memória 2024</footer>
 </body>
 </html>
+

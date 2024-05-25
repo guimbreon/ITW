@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<!--
+    RC: 2023-2024
+    GRUPO 13
+    Guilherme Soares n 62372: PL23
+    João Ribeiro 62206: PL23
+    Duarte Soares  62371: PL23
+-->
+<head>
+    <meta charset="utf-8">
+    <title>Jogo da memória</title>
+    <link rel="icon" href="../images/decks/pokemon.png" type="images/png">
+    <link rel="stylesheet" href="../styles/imports/raspadinhasStyle.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index/index.html">Página Inicial</a></li>
+        <li><a href="../header/stats.html">Estatísticas</a></li>
+        <li><a href="../header/info.html">Informações</a></li>
+        <li id="pessoal"></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="topo">
+    <h1>Menu do Jogo!</h1>
+    <p>Tens apenas 30% de chance de ganhar</p>
+  </div>
+  <h1>Raspadinhas!</h1>
+  <p>Pontos: <span id="money"></span></p>    
+  <p id="result"></p>
+  <div class="scratch-card" id="scratchCard1" data-cost="10" >
+    <img class="scratch-image" src="../images/raspadinha/preto.png" alt="Scratch Card 1" id = "10">
+    <p class="scratch-price">10 Pontos</p>
+  </div>
+  <div class="scratch-card" id="scratchCard2" data-cost="20">
+    <img class="scratch-image" src="../images/raspadinha/lara.png" alt="Scratch Card 2" id = "20">
+    <p class="scratch-price">20 Pontos</p>
+  </div>
+  <div class="scratch-card" id="scratchCard3" data-cost="30">
+    <img class="scratch-image" src="../images/raspadinha/azul.png" alt="Scratch Card 3" id = "30">
+    <p class="scratch-price">30 Pontos</p>
+  </div>
+  <div class="scratch-card" id="scratchCard4" data-cost="40">
+    <img class="scratch-image" src="../images/raspadinha/rosa.png" alt="Scratch Card 4" id = "40">
+    <p class="scratch-price">40 Pontos</p>
+  </div>
+  <div class="scratch-card" id="scratchCard5" data-cost="50">
+    <img class="scratch-image" src="../images/raspadinha/roxo.png" alt="Scratch Card 5" id = "50">
+    <p class="scratch-price">50 Pontos</p>
+  </div>
+  <div id="fim">
+  </div>
+  <script src="../scripts/raspadinha.js"></script>
+  <script src="../scripts/logged.js"></script>
+
+  <footer>&copy; Jogo da memória 2024</footer>
+
+</body>
+</html>

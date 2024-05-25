@@ -1,0 +1,39 @@
+OBRIGATÓRIO:
+
+1. modo individual [+/-]
+
+2. antes de jogar o jogador tem de se indentificar, podendo registrar-se. dados em local storage [SIM]
+
+3- página de stats pessoal, com os seus valores. [SIM]
+ 
+4. Tabuleiro 5x4 com 10 pares de cartas. [SIM]
+
+5- tempo decorrido do jogo, quantas cartas faltam coletar e quantos pontos foram obtidos. e um botao para terminar o jogo manualmente [SIM]
+
+6-cada carta referenciada por um nro(no jogo input),  [SIM]
+
+7- numa jogada são reveladas duas cartas iguais, sao retiradas do tabuleiro, e os seus lugares ficam vazios.[SIM]
+
+8- um jogo termina quando forem revelados todos os pares ou manualmente com o botao.  [SIM]
+
+9- depois do jogo deve ser apresentada:
+
+9.1 tabela de 10 melhores tempos de jogo e os nomes dos jogadores. [NAO]
+
+10 - o jogo deve ajustar-se ao tamanho da tela. [+/-]
+
+
+
+EXTRA que temos:
+
+1- DECKS extra e com cartas extra cada um, ex:
+
+se existirem 20 cartas no deck, 5 são escolhidas aleatóriamente e colocadas em pares na tela.
+
+2- tempos de jogo:
+
+Podes escolher se queres um jogo infiinito, ou que dure 1m, 3m, 5m ou 10m.
+
+3- Podes escolher se jogas com clicks ou input do user.
+
+4- LOJA com vários decks para comprar

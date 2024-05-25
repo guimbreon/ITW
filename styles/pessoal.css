@@ -1,0 +1,32 @@
+/*
+    RC: 2023-2024
+    GRUPO 13
+    Guilherme Soares n 62372: PL23
+    João Ribeiro 62206: PL23
+    Duarte Soares  62371: PL23
+*/
+
+#loja {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaçamento entre os itens */
+}
+
+.item {
+    flex: 1 1 calc(20% - 10px); /* Ajusta a largura dos itens para serem aproximadamente 20% do contêiner */
+    max-width: calc(20% - 10px); /* Garante que a largura máxima seja 20% do contêiner */
+    padding: 10px;
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total */
+    background-color: #add8e6;
+    border: 8px dashed #e5e5e5;
+    text-align: center; /* Centraliza o texto e imagem dentro do item */
+}
+
+.item img {
+    width: calc(40px + 20%);
+    height: auto;
+}
+
+body{
+    background-color: #e5e5e5;
+}

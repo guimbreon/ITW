@@ -1,0 +1,28 @@
+/*
+    RC: 2023-2024
+    GRUPO 13
+    Guilherme Soares n 62372: PL23
+    João Ribeiro 62206: PL23
+    Duarte Soares  62371: PL23
+*/
+
+.cima{
+  background-color: #add8e6;
+  border-bottom: 8px dashed #e5e5e5;
+  margin-top: 55px;
+}
+
+
+footer {
+  background-color: #002147;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px; /* Set to the height of the footer to hide it initially */
+  left: 0;
+  transition: bottom 0.3s ease; /* Add smooth transition for animation */
+  border-top: 8px dashed lightblue;
+}

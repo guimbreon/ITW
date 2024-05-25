@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
-  <!--
-  Guilherme Soares n 62372: PL23
-  João Ribeiro 62206: PL23
-  Duarte Soares  62371: PL23
+<!--
+    RC: 2023-2024
+    GRUPO 13
+    Guilherme Soares n 62372: PL23
+    João Ribeiro 62206: PL23
+    Duarte Soares  62371: PL23
 -->
 <head>
 
     <meta charset="utf-8">
-    <title>Memory game</title>
+    <title>Jogo da memória</title>
     <link rel="icon" href="../images/decks/pokemon.png" type="images/png">
     <link rel="stylesheet" href="../styles/imports/statsStyle.css">
 
 </head>
 
 <body>
-  <header>    
-    <audio controls autoplay >
-      <source src="../sounds/All That Bensound.mp3" type="audio/mp3">
-      Your browser does not support the audio element.
-    </audio>
+  <header>
     <nav>
       <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><strong>Stats</strong></li>
-        <li><a href="info.html">Info</a></li>
+        <li><a href="../index/index.html">Página Inicial</a></li>
+        <li><strong>Estatísticas</strong></li>
+        <li><a href="info.html">Informações</a></li>
+        <li id="pessoal"></li>
       </ul>
     </nav>
   </header>
-  <div class="topo"></div>
-  <h1>Aqui temos as stats do jogo!</h1>
-  <p>Como podemos ver o jogador com melhor tempo é o zezocas. </p>
-  <table>
-      <tr>
-          <th>nome</th>
-          <th colspan="2">tempo</th>
-          <th>posição</th>
-          
-      </tr>
-      <tr>
-          <td>zezocas<br>joao<br>manel<br>guimbreon</td>
-          <td rowspan="2">1<br>2<br>3<br><br></td>
-          <td rowspan="2">1<br>2<br>3<br><br></td>
-          <td>1<br>2<br>3<br>12345</td>
-      </tr>
+  <div id="borda">
+    <div class="topo"></div>
+    <h1>Aqui temos as estatísticas do jogo!</h1>
+    <p>Vão poder ver o top global dos jogos jogados e o top 10 de cada user!</p>
+    <p>Para dados estatisticos pessoais aceder á aba Perfil!</p>
+    <p><strong>Não se esqueçam que quanto mais jogarem, maior a chance de estarem no TOP 10</strong></p>
 
-  </table>
-    
+    <div id="tabelaStats">
+      <h2>Tabela top 10 global!</h2>
+    </div>
 
+    <div id="tabelaTodos">
+      <h2>Tabela top 10 de cada user</h2>
+    </div>
+    <script src="../scripts/logged.js"></script>
+    <script src="../scripts/tabelas.js"></script>
+
+  </div>
+  <footer>&copy; Jogo da memória 2024</footer>
 </body>
+</html>

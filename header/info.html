@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
-  <!--
-  Guilherme Soares n 62372: PL23
-  João Ribeiro 62206: PL23
-  Duarte Soares  62371: PL23
+<!--
+    RC: 2023-2024
+    GRUPO 13
+    Guilherme Soares n 62372: PL23
+    João Ribeiro 62206: PL23
+    Duarte Soares  62371: PL23
 -->
 <head>
 
     <meta charset="utf-8">
-    <title>Memory game</title>
+    <title>Jogo da memória</title>
     <link rel="icon" href="../images/decks/pokemon.png" type="images/png">
     <link rel="stylesheet" href="../styles/imports/infoStyle.css">
 </head>
 
 <body>
   <header>
-    <audio controls autoplay >
-      <source src="../sounds/All That Bensound.mp3" type="audio/mp3">
-      Your browser does not support the audio element.
-    </audio>
     <nav>
       <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="stats.html">Stats</a></li>
-        <li><strong>Info</strong></li>
+        <li><a href="../index/index.html">Página Inicial</a></li>
+        <li><a href="stats.html">Estatísticas</a></li>
+        <li><strong>Informações</strong></li>
+        <li id="pessoal"></li>
       </ul>
     </nav>
   </header>
@@ -33,10 +32,10 @@
   <div class="cima">
     <h2>Como jogar:</h2>
     <div class="video">
-      <video width=auto height="240" controls>
+      <video width= "auto" height="240" controls>
         <source src="../videos/Regras Jogo da Memória.mp4" type="video/mp4">
 
-      Your browser does not support the video tag.
+      O seu browser não suporta o elemento vídeo.
       </video>
     </div>
     <p>Para começar o jogo, as cartas são todas viradas com a 
@@ -48,7 +47,35 @@
       <li>Caso o par seja <em>diferente</em>, as cartas devem ser novamente viradas com a figura para baixo,
         sendo passada a vez para o jogador seguinte.</li>
     </ol>
-    <p>O jogo termina quando todos os pares tiverem sido encontrados, ganhando quem tiver mais pontos no final. </p>
+    <p>O jogo termina quando todos os pares tiverem sido encontrados. </p>
+    <h2>Informações que deves saber:</h2>
+
+    <p>Na página pessoal encontra-se uma tabela com os teus melhores tempos e ainda uma loja onde se pode comprar diferentes decks para jogar 
+      conforme os pontos atribuidos a cada jogador.
+    </p>
+    <p>Os pontos são atribuidos conforme o jogador vai ganhando jogos e conforme a dificuldade de cada partida(tempo limite de jogo), que é escolhida no início de cada jogo:
+      <ul>
+        <li>Sem limite: 1 Ponto;</li>
+        <li>Limite de 10mns: 2 Pontos;</li>
+        <li>Limite de 7mns: 4 Pontos;</li>
+        <li>Limite de 3mns: 7 Pontos;</li>
+        <li>Limite de 1mns: 10 Pontos.</li>
+      </ul>
+    </p>
+    <p>
+      No início de cada partida pode também ser escolhido o modo de jogo, clicando na sua opção:
+      <ul>
+        <li>Clicar: Conseguem jogar ao clicar nas cartas;</li>
+        <li>Escrever: Conseguem jogar ao escrever nas caixas de texto os ID's das cartas.</li>
+      </ul>
+    </p>
+    <p>
+      Existe também uma página das estatísticas onde se pode ver algumas informações de partidas realizadas
+      tais como melhor ranking global com o tempo e o nome do jogador e melhor ranking pessoal com os melhores 10 tempos de cada jogador.
+    </p>
+    <h2>MiniJogo "secreto"</h2>
+    <p>Existe um MiniJogo "secreto" na página de Perfil, encontrem-no para conseguirem ganhar ainda mais pontos!</p>
+
   </div>
   
 
@@ -61,10 +88,10 @@
   </div>
 
   <div class="ultimo">
-    <h2>Ficha técnica:</h1>
+    <h2>Ficha técnica:</h2>
     <h3>Feito por:</h3>
     <ul>
-      <li><a href="https//facebook.pt/account/joaoribeiro2004">João Ribeiro</a></li>
+      <li><a href="https://github.com/joao-r1">João Ribeiro</a></li>
       <li><a href="https://last.fm/user/fareskye">Duarte Soares</a></li>
       <li><a href = "https://github.com/Guimbreon">Guilherme Soares</a></li>
     </ul>
@@ -74,5 +101,7 @@
     <img src="../images/icons/css.png" style = "height: 40px;width:auto;" alt = "css">
     <img src="../images/icons/java-script.png" style = "height: 40px;width:auto;" alt = "javascript">
   </div>
-  <footer>&copy; Jogo da memoria 2024</footer>
+  <footer>&copy; Jogo da memória 2024</footer>
+  <script src="../scripts/logged.js"></script>
 </body>
+</html>

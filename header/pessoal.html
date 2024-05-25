@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<!--
+    RC: 2023-2024
+    GRUPO 13
+    Guilherme Soares n 62372: PL23
+    João Ribeiro 62206: PL23
+    Duarte Soares  62371: PL23
+-->
+<head>
+
+    <meta charset="utf-8">
+    <title>Jogo da memória</title>
+    <link rel="icon" href="../images/decks/pokemon.png" type="images/png">
+    <link rel="stylesheet" href="../styles/imports/pessoalStyle.css">
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index/index.html">Página Inicial</a></li>
+        <li><a href="stats.html">Estatísticas</a></li>
+        <li><a href="info.html">Informações</a></li>
+        <li><strong>Perfil</strong></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="borda">
+    <div class="topo"></div>
+    <h1>Aqui está a página pessoal do utilizador!</h1>
+    <button onclick="unLogin()">Sair</button>
+    <h2> Stats Pessoais</h2>
+    <h3>Top 13 Melhores Tempos</h3>
+    <div id="tabelaPessoal"></div>
+    <h3>Tempo Jogado e Número de jogos.</h3>
+    <div id="tabelaJogos"></div>
+    <h2>Loja!</h2>
+    <p id="pontos"></p>
+    <p>Nao tens pontos suficientes?</p>
+    <ul>
+      <li>Podes jogar mais jogos OU</li>
+      <li><button onclick="irMiniJogo()">MiniJogo Supresa</button></li>
+    </ul>
+    <div id="loja"></div>
+  </div>
+  <script src="../scripts/logged.js"></script>
+  <script src="../scripts/loja.js"></script>
+  <script src="../scripts/tabelas.js"></script>
+    
+  <footer>&copy; Jogo da memória 2024</footer>
+
+</body>
+</html>
