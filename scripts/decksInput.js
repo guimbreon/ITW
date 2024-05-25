@@ -137,7 +137,7 @@ function readInput(){
     function handleEnterKeyPress(event) {
         // Check if the pressed key is Enter (keyCode 13)
         document.getElementById("corretas").innerHTML = "<p>Já acertou " + corretas.length 
-        + " ainda faltam " + (10-corretas.length) + ".</p>"
+        + " ainda faltam " + (20-corretas.length) + ".</p>"
         if (event.keyCode === 13) { //Quando o "Enter" é pressionado ele ativa
             console.log("Enter key pressed");
             
@@ -196,7 +196,7 @@ function readInput(){
             corretas.push(value2);
 
             //Check if the game is complete
-            if(corretas.length == 2){
+            if(corretas.length == 20){
                 for (let user of users) {
                     if(user.username == userLogged && user.pontos != null){
                         user.pontos += pontos;

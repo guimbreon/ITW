@@ -109,7 +109,7 @@ function mostrar(todasCartas) {
                             clickedCards = [];
 
                             // Verificar se o número de cartas corretas alcançou o limite
-                            if (certos == 2) {
+                            if (certos == 10) {
                                 // Retrieve and update the 'pontos' value in localStorage
                                 
                                 for (let user of users) {
