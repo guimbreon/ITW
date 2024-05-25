@@ -26,75 +26,73 @@
         </nav>
     </header>
     <div class="topo"></div>
-    <div class="container">
-        <div class="registo">
-            <h2>Registo:</h2>
-            <form id="frmReg">
-              <fieldset>
-              
-                <label for="regUsername">Nome de utilizador</label>
-                <input id="regUsername" type="text" 
-                        name="username" required
-                        maxlength="12" size="20">
-
-                <label for="regSenha">Senha</label>
-                <input id="regSenha" type="password" 
-                      name="senha" required
-                      maxlength="18" size="20">
-
-                <label for="regEmail">E-mail</label>
-                <input id="regEmail" type="email" 
-                      name="email" required
-                      maxlength="20" size="20">
-
-                    </fieldset>
-                    <fieldset>
-                <label for="selFaixaEt">Faixa etária</label>
-                <select id="selFaixaEt" name="faixaEt">
-                  <option value="crianca" selected>0-12</option>
-                  <option value="jovem" selected>13-18</option>
-                  <option value="adulto" selected>19-59</option>
-                  <option value="idoso" selected>60+</option>
-                </select>
-
-                <label for="selGenero">Género</label>
-                <select id="selGenero" name="genero">
-                  <option value="masc" selected>Masculino</option>
-                  <option value="fem">Feminino</option>
-                  <option value="nao">Prefiro não divulgar</option>
-                  <option value="outro">Outro</option>
-                </select>
-              </fieldset>
-            </form>
-            <p></p>
-
-        
-            <button type="button" onclick="criaUser()">Registar</button>
-       
-        </div>
-        <div class="login">
-          <h2>Entrar:</h2>
-          
-          <form id="frmLogin">
-            <fieldset >
+      <div class="registo">
+          <h2>Registo:</h2>
+          <form id="frmReg">
+            <fieldset>
             
-              <label for="loginUsername">Nome de utilizador</label>
-              <input id="loginUsername" type="text" 
+              <label for="regUsername">Nome de utilizador</label>
+              <input id="regUsername" type="text" 
                       name="username" required
                       maxlength="12" size="20">
 
-              <label for="loginSenha">Senha</label>
-              <input id="loginSenha" type="password" 
+              <label for="regSenha">Senha</label>
+              <input id="regSenha" type="password" 
                     name="senha" required
                     maxlength="18" size="20">
 
-                  </fieldset>
-          </form>
-            <p></p>
+              <label for="regEmail">E-mail</label>
+              <input id="regEmail" type="email" 
+                    name="email" required
+                    maxlength="20" size="20">
 
-            <button type="button" onclick="fazerLogin()">Entrar</button>
-        </div>
-    </div>
+                  </fieldset>
+                  <fieldset>
+              <label for="selFaixaEt">Faixa etária</label>
+              <select id="selFaixaEt" name="faixaEt">
+                <option value="crianca" selected>0-12</option>
+                <option value="jovem" selected>13-18</option>
+                <option value="adulto" selected>19-59</option>
+                <option value="idoso" selected>60+</option>
+              </select>
+
+              <label for="selGenero">Género</label>
+              <select id="selGenero" name="genero">
+                <option value="masc" selected>Masculino</option>
+                <option value="fem">Feminino</option>
+                <option value="nao">Prefiro não divulgar</option>
+                <option value="outro">Outro</option>
+              </select>
+            </fieldset>
+          </form>
+          <p></p>
+
+      
+          <button type="button" onclick="criaUser()">Registar</button>
+      
+      </div>
+      <div class="login">
+        <h2>Entrar:</h2>
+        
+        <form id="frmLogin">
+          <fieldset >
+          
+            <label for="loginUsername">Nome de utilizador</label>
+            <input id="loginUsername" type="text" 
+                    name="username" required
+                    maxlength="12" size="20">
+
+            <label for="loginSenha">Senha</label>
+            <input id="loginSenha" type="password" 
+                  name="senha" required
+                  maxlength="18" size="20">
+
+                </fieldset>
+        </form>
+          <p></p>
+
+          <button type="button" onclick="fazerLogin()">Entrar</button>
+      </div>
     
   <footer>&copy; Jogo da memória 2024</footer>
   <script src="../scripts/logReg.js"></script>

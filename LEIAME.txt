@@ -13,7 +13,7 @@ Oque fez?
 
 #2º parte
 - Sistema do jogo(movimentos, verificar se já ganhou, pontos) clicks e input;
-- Sistema de pontos, guardar em localStorage timers e Loja;
+- Sistema de pontos, guardar em localStorage timers, Loja e organizar como funciona os Users;
 - Loader dos tabuleiros;
 - MiniJogo Secreto;
 - Sistema de seleção no Menu do jogo.
@@ -34,7 +34,8 @@ Oque fez?
 #2º parte
 - Tabelas;
 - Página Informações no Header;
- - Completou parte dos decks na página decks.html onde tem a lista de cartas de cada deck.
+ - Completou parte dos decks na página decks.html onde tem a lista de cartas de cada deck;
+- Login.
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -51,7 +52,8 @@ Oque fez?
 
 #2º parte
 
-- Página de Fim do jogo;
-- Organização do Perfil;
- - Completou parte dos decks na página decks.html onde tem a lista de cartas de cada deck.
+- Página de Fim do jogo
+ - Completou parte dos decks na página decks.html onde tem a lista de cartas de cada deck;
+- Organização da página login, registro e perfil;
+- Registro.
 
