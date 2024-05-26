@@ -12,8 +12,10 @@ function verificarLogin(){
          "<a href='../header/pessoal.html'>Perfil</a>"
          urlParams = window.location.href;
     if(urlParams.includes("index.html")){
+        document.getElementById("pessoal").innerHTML =
+         "<a href='header/pessoal.html'>Perfil</a>"
         
-    document.getElementById('botaoMenu').href = "../jogo/menu.html"
+        document.getElementById('botaoMenu').href = "jogo/menu.html"
 
     }
     }

@@ -59,6 +59,9 @@ function mostrar(todasCartas) {
     baralhoEscolhido = cartasEmPar(baralhoEscolhido)
     baralhoEscolhido = baralhar(baralhoEscolhido)
 
+    document.getElementById("corretas").innerHTML = "<p>Já acertou 0" 
+    + " ainda faltam " + (20) + ".</p>"
+
     do {
         for (i = 1; i <= 5; i++) {
             let carta = baralhoEscolhido[element];
@@ -136,8 +139,6 @@ function readInput(){
     //Para quando o "Enter é pressionado"
     function handleEnterKeyPress(event) {
         // Check if the pressed key is Enter (keyCode 13)
-        document.getElementById("corretas").innerHTML = "<p>Já acertou " + corretas.length 
-        + " ainda faltam " + (20-corretas.length) + ".</p>"
         if (event.keyCode === 13) { //Quando o "Enter" é pressionado ele ativa
             console.log("Enter key pressed");
             
@@ -167,6 +168,8 @@ function readInput(){
         // Check if the selected cards are the same
         if (value1 === value2) {
             window.alert("Os digitos são iguais");
+            legenda1.style = "display: relative;"
+            legenda2.style = "display: relative;"
             return; // Exit the function early
         }
         

@@ -75,9 +75,10 @@ function mostrar(todasCartas) {
             img.value = String(line) + String(i);
             img.linkReal = carta.link;
             img.linkBack = "../images/back.jpg";
+            
+            document.getElementById("corretas").innerHTML = "<p>Já acertou 0 ainda faltam " + (10 - certos) + ".</p>";
             img.addEventListener("click", function () {
 
-                document.getElementById("corretas").innerHTML = "<p>Já acertou " + certos + " ainda faltam " + (10 - certos) + ".</p>";
 
                 // Verificar se a carta já foi clicada e se há menos de 2 cartas clicadas
                 if (!clickedCards.includes(img.id) && numCardsClicked < 2 && !alreadyClickedCards.includes(img.id)) {
@@ -98,6 +99,8 @@ function mostrar(todasCartas) {
                                 alreadyClickedCards.push(carta2.id)
                                 console.log("IGUAL FUNCIONA!");
                                 certos++;
+                                
+                                document.getElementById("corretas").innerHTML = "<p>Já acertou " + certos + " ainda faltam " + (10 - certos) + ".</p>";
                             } else {
                                 console.log("NÃO IGUAL :)");
                                 carta1.src = carta1.linkBack;
