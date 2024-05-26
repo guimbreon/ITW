@@ -1,3 +1,12 @@
+/*
+    RC: 2023-2024
+    GRUPO 13
+    Guilherme Soares n 62372: PL23
+    João Ribeiro 62206: PL23
+    Duarte Soares  62371: PL23
+*/
+
+
 todasCartas = [
     { nome: "Asparagus", link: "../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-asparagus.jpeg" },
     { nome: "Avocado", link: "../images/VEGETABLE-FLASHCARDS/vegetable-flashcard-avocado.jpeg" },
