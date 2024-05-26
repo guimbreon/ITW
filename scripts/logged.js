@@ -7,17 +7,17 @@
 */
 
 function verificarLogin(){
-    if(localStorage.getItem("logged?")[0] == "T"){ //APENAS PARA O INDEX
+    urlParams = window.location.href;
+    if(localStorage.getItem("logged?")[0] == "T" && !urlParams.includes("pessoal.html")){ //APENAS PARA O INDEX
         document.getElementById("pessoal").innerHTML =
          "<a href='../header/pessoal.html'>Perfil</a>"
-         urlParams = window.location.href;
+        }
     if(urlParams.includes("index.html")){
         document.getElementById("pessoal").innerHTML =
          "<a href='header/pessoal.html'>Perfil</a>"
         
         document.getElementById('botaoMenu').href = "jogo/menu.html"
 
-    }
     }
     
 

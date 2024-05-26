@@ -77,6 +77,8 @@ function adicionarItensLoja() {
                     
                     alert(`Tem menos de ${item.price} pontos!`)
                 }
+                const pontosParagrafo = document.getElementById('pontos')
+                pontosParagrafo.innerHTML = `Tens ${loggedUser.pontos} pontos.`;
             };
             itemDiv.appendChild(comprarButton);
 
