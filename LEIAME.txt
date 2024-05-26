@@ -3,7 +3,7 @@ Guilherme Soares nº 62372:
 - Aproximadamente 45% do projeto.
 
 Oque fez?
-#1º parte
+#1º entrega
 - Pesquisa sobre os icons usados
 - Página dos infos + ficha tecnica
 - Design da página extra/decks.html onde tem a lista de cardas de cada deck.
@@ -11,7 +11,7 @@ Oque fez?
 - Organização das pastas e dos styles
 - Menu
 
-#2º parte
+#2º entrega
 - Sistema do jogo(movimentos, verificar se já ganhou, pontos) clicks e input;
 - Sistema de pontos, guardar em localStorage timers, Loja e organizar como funciona os Users;
 - Loader dos tabuleiros;
@@ -21,7 +21,7 @@ Oque fez?
 
 ------------------------------------------------------------------------------------------------------------------------
 João Ribeiro nº62206:
-#1º parte
+#1º entrega
 
 - Aproximadamente 27,5% do projeto.
 
@@ -31,7 +31,7 @@ Oque fez?
 - Home
 
 
-#2º parte
+#2º entrega
 - Tabelas;
 - Página Informações no Header;
  - Completou parte dos decks na página decks.html onde tem a lista de cartas de cada deck;
@@ -40,7 +40,7 @@ Oque fez?
 
 ------------------------------------------------------------------------------------------------------------------------
 Duarte Soares nº62371:
-#1º parte
+#1º entrega
 
 - Aproximadamente 27,5% do projeto.
 
@@ -50,10 +50,50 @@ Oque fez?
 - Página das stats.
 
 
-#2º parte
+#2º entrega
 
 - Página de Fim do jogo
  - Completou parte dos decks na página decks.html onde tem a lista de cartas de cada deck;
 - Organização da página login, registro e perfil;
 - Registro.
+-----------------------------------------------------------------------------------------------------------------------------
 
+
+Obrigatórios:
+1. O jogo tem de suportar o modo individual, isto é, com apenas um jogador do princípio ao fim de um jogo, não sendo preciso passar a vez a outro jogador
+
+2- Antes de poder jogar, um jogador tem de se identificar, podendo ser necessário registar-se (e-mail, senha, faixa etária, e género), caso ainda não o tenha feito. Os registos de dados devem ficar guardados em local storage do browser.
+
+3. De igual forma, só depois de se identificar é que um jogador pode ver estatísticas sobre o seu número de jogos, tempo total jogado, e tempo de cada jogo.
+
+4. No início de cada jogo, é mostrado um tabuleiro de dimensão 5×4 casas, com 10 pares de cartas, todas com a figura para baixo e dispostas aleatoriamente.
+
+5. Durante um jogo são mostrados o tempo decorrido, em segundos, os pontos obtidos e os que faltam conquistar até se atingir o fim do jogo, bem como um botão para terminar manualmente o jogo.
+
+6. Cada carta no tabuleiro é referenciada por um número, não sendo necessário usar o rato para selecionar cartas. Cada carta deve ter visível um número que o jogador digita para revelar a respetiva figura. Assim, uma jogada compreende a escrita de dois números, para virar pares de cartas.
+
+7. Quando numa jogada são reveladas duas cartas iguais, são retiradas do tabuleiro, ficando vazias as casas que ocupavam, e é atribuído 1 ponto ao jogador,podendo jogar novamente. Se as duas cartas forem diferentes, as suas figuras voltam a ficar voltadas para baixo e é passada a vez ao jogador seguinte.
+
+8. Um jogo termina quando tiverem sido revelados todos os pares de cartas do tabuleiro, ou se for carregado o botão de terminar manualmente o jogo.
+
+9. Após um jogo, deve ser apresentada uma tabela com os dez melhores tempos de jogo e os nomes dos jogadores, devendo essa informação ficar guardada em local storage do browser.
+
+10. Os conteúdos nas páginas do site, e o jogo propriamente dito, devem ajustar-se automaticamente ao tamanho e orientação do ecrã (responsive web design).
+
+
+EXTRA:
+
+1. Decks extra:
+1.1 ~10 decks que o user pode usar;
+1.2 Cada deck tem mais cartas do que as selecionadas para o tabuleiro, sendo feita uma escolha aleatória de cartas a serem colocadas no tabuleiro.
+
+2. Loja: Decks na loja para comprar, o user ao iniciar a sua conta tem apenas 1 deck "Animais da selva", e tem que comprar decks na aba perfil para conseguir usá-los.
+
+3. Estatisticas:
+3.1 TOP 10 tempos de cada utilizador
+
+4. Jogo:
+4.1 Tempos limite;
+4.2 Cliques para jogar.
+
+5. MiniJogo: um minijogo para jogar com a pontuacao do user.

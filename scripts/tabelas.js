@@ -88,7 +88,7 @@ function inserirTemposPessoal() {
         let userTimes = sortTimers(loggedUser.timers);
 
         // Definir o número máximo de timers
-        let maxTimers = 13;
+        let maxTimers = userTimes.length;
 
         // Criar as linhas para cada índice de timer até maxTimers
         for (let i = 0; i < maxTimers; i++) {
