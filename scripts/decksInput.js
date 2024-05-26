@@ -60,7 +60,7 @@ function mostrar(todasCartas) {
     baralhoEscolhido = baralhar(baralhoEscolhido)
 
     document.getElementById("corretas").innerHTML = "<p>Já acertou 0" 
-    + " ainda faltam " + (20) + ".</p>"
+    + " ainda faltam " + (20) + " cartas.</p>"
 
     do {
         for (i = 1; i <= 5; i++) {

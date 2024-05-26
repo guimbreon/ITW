@@ -45,13 +45,13 @@ function principal() {
 function criaUser() {
     const username = formularioRegisto.elements[REGISTO_USERNAME].value;
     const senha = formularioRegisto.elements[REGISTO_SENHA].value;
-    const email = formularioRegisto.elements[REGISTO_EMAIL].value;
+    let email = formularioRegisto.elements[REGISTO_EMAIL].value;
     const faixaEtaria = formularioRegisto.elements[REGISTO_FAIXA_ETARIA].value;
     const genero = formularioRegisto.elements[REGISTO_GENERO].value;
 
 
     /* VERIFICAR SE O USER EXISTE */
-    const existe = false;
+    let existe = false;
     for (let user of users) {
         if (username == user.username && email == user.email){
             window.alert("Username e E-mail já estão em uso!");
@@ -68,9 +68,14 @@ function criaUser() {
             formularioRegisto.reset();
             existe = true
             break; // Não há necessidade de continuar o loop se já encontramos uma correspondência
+        }else if(!(email.split("@").length == 2) || email.split("@")[1] == ""){
+            window.alert("E-mail com apresentação incorreta.\nDeveria ser 'exemplo1@exemplo2'.");
+            formularioRegisto.reset();
+            existe = true
+            break;
         }
     }
-    if(!existe){
+    if(!existe){ //se não existe
         const novoUser = new User(username, senha, email, faixaEtaria, genero);
 
         users.push(novoUser);

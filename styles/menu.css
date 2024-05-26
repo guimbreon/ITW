@@ -73,12 +73,12 @@ table {
 
 
 .decks a {
-  color: initial; /* Cor inicial do texto */
-  text-decoration: none; /* Remover o underline */
+  color: initial;
+  text-decoration: none;
 }
 
 .decks a:hover {
-  color: rgb(108, 195, 224); /* MUDAR */
+  color: rgb(108, 195, 224);
 }
 
 footer {

@@ -76,7 +76,7 @@ function mostrar(todasCartas) {
             img.linkReal = carta.link;
             img.linkBack = "../images/back.jpg";
             
-            document.getElementById("corretas").innerHTML = "<p>Já acertou 0 ainda faltam " + (10 - certos) + ".</p>";
+            document.getElementById("corretas").innerHTML = "<p>Já acertou 0 ainda faltam " + (10 - certos) + " pares.</p>";
             img.addEventListener("click", function () {
 
 

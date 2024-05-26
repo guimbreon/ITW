@@ -7,11 +7,11 @@
 */
 
 .login{
-  background-color: #E5E5E5; /*mudar*/
+  background-color: #E5E5E5;
 }
 .registo{
-  background-color: lightblue; /*mudar*/
-  border-right: 8px dashed #E5E5E5;
+  background-color: lightblue;
+  border-bottom: 8px dashed #E5E5E5;
 }
 .options{
   display: flex;

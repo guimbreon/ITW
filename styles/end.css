@@ -8,7 +8,7 @@
 
 .cima{
   background-color: #add8e6;
-  border-bottom: 8px dashed #e5e5e5;
+  border-bottom: none;
   margin-top: 55px;
 }
 
@@ -21,8 +21,8 @@ footer {
   padding-bottom: 15px;
   width: 100%;
   position: fixed;
-  bottom: 0px; /* Set to the height of the footer to hide it initially */
+  bottom: 0px;
   left: 0;
-  transition: bottom 0.3s ease; /* Add smooth transition for animation */
+  transition: bottom 0.3s ease;
   border-top: 8px dashed lightblue;
 }

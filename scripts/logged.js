@@ -12,7 +12,7 @@ function verificarLogin(){
         document.getElementById("pessoal").innerHTML =
          "<a href='../header/pessoal.html'>Perfil</a>"
         }
-    if(urlParams.includes("index.html")){
+    if(localStorage.getItem("logged?")[0] == "T" && urlParams.includes("index.html")){
         document.getElementById("pessoal").innerHTML =
          "<a href='header/pessoal.html'>Perfil</a>"
         
@@ -25,7 +25,7 @@ function verificarLogin(){
 function unLogin(){
     localStorage.setItem("logged?", "False")
     window.alert("Vai ser redirecionado para a página principal!")
-    window.location.href = "../index/index.html"
+    window.location.href = "../index.html"
 }
 
 verificarLogin()

@@ -65,8 +65,8 @@ nav ul li a {
 }
 
 audio {
-  width: calc(100px + 10%); /* Defina a largura desejada */
-  height: 17.6; /* Deixe a altura ajustável para manter a proporção */
+  width: calc(100px + 10%);
+  height: 17.6;
 }
 
 div{
@@ -81,7 +81,7 @@ footer {
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100%;
-  position: relative; /* Change position to relative */
+  position: relative;
   bottom: 0;
 }
 
