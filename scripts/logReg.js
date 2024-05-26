@@ -68,12 +68,13 @@ function criaUser() {
             formularioRegisto.reset();
             existe = true
             break; // Não há necessidade de continuar o loop se já encontramos uma correspondência
-        }else if(!(email.split("@").length == 2) || email.split("@")[1] == ""){
-            window.alert("E-mail com apresentação incorreta.\nDeveria ser 'exemplo1@exemplo2'.");
-            formularioRegisto.reset();
-            existe = true
-            break;
         }
+    }
+    console.log(existe)
+    if((!(email.split("@").length == 2) || email.split("@")[1] == "") && !existe){
+        window.alert("E-mail com apresentação incorreta.\nDeveria ser 'exemplo1@exemplo2'.");
+        formularioRegisto.reset();
+        existe = true;
     }
     if(!existe){ //se não existe
         const novoUser = new User(username, senha, email, faixaEtaria, genero);

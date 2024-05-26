@@ -15,7 +15,6 @@ function verificarLogin(){
     if(localStorage.getItem("logged?")[0] == "T" && urlParams.includes("index.html")){
         document.getElementById("pessoal").innerHTML =
          "<a href='header/pessoal.html'>Perfil</a>"
-        
         document.getElementById('botaoMenu').href = "jogo/menu.html"
 
     }

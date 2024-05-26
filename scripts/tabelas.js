@@ -94,7 +94,7 @@ function inserirTemposPessoal() {
         for (let i = 0; i < maxTimers; i++) {
             let trTd = document.createElement("tr");
             const td = document.createElement("td");
-            td.className = "besTime"; // corrigido o nome da classe de 'besTime' para 'bestTime'
+            td.className = "besTime";
             td.innerHTML = userTimes[i] || ''; // Usar uma string vazia se não existir tempo
             trTd.appendChild(td);
             tabela.appendChild(trTd);

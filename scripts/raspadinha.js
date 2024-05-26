@@ -5,8 +5,6 @@
     João Ribeiro 62206: PL23
     Duarte Soares  62371: PL23
 */
-
-
 let userLogged = localStorage.getItem("logged?").substring(5)
 
 let users = localStorage.getItem("users");
