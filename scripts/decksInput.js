@@ -233,7 +233,9 @@ function readInput(){
                 legenda2.style = "display: relative;"
                 
             }, 3000);
-        }
+        }    
+        document.getElementById("corretas").innerHTML = "<p>Já acertou" + corretas.length 
+        + " ainda faltam " + (20-corretas.length) + " cartas.</p>"
         
 
     }
