@@ -77,7 +77,6 @@ function selectMins(optionId){
   selectedOption[3] = optionId; // Update the second position in the list
 }
 
-
 function sendSelection() {
   if (selectedOption.length == 4 && selectedOption[0] != null  && selectedOption[1] != null  && selectedOption[2] != null  && selectedOption[3] != null) { //Only if there are 2 items selected, there will be sent to the next page
     // Redirect to the next page with the selected JavaScript option
